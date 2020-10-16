@@ -178,6 +178,11 @@ button {
   top: 262px;
   border: 1px solid rgba(238, 238, 238, 1);
 }
+.footer {
+  width: 1600px;
+  height: 252px;
+  background: #2f303a;
+}
 #contacts {
   width: 1600px;
   height: 252px;
