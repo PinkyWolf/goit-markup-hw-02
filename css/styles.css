@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-bg-color: #2f303a;
+  --primary-text-color: #2196f3;
+  --secondary-text-color: #000000;
+  --third-text-color: #ffffff;
+  --main-text-color: #757575;
+  --header-color: #212121;
+  --secondaru-bg-color: #f5f4fa;
+}
 body {
   font-family: Roboto, sans-serif;
 }
@@ -9,7 +18,7 @@ body {
   box-sizing: border-box;
   width: 1600px;
   height: 80px;
-  background: #ffffff;
+  background: var(--third-text-color);
 }
 .title {
   padding: 25px 93px 25px 215px;
@@ -19,9 +28,13 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var (var(--secondary-text-color));
 }
-.title-color {
-  color: #2196f3;
+.title-properties {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--primary-text-color);
 }
 .top-block {
   width: 1600px;
@@ -31,33 +44,26 @@ body {
   display: inline;
   margin-right: 50px;
 }
-.navigation-header > li :hover,
-.navigation-header > li :focus {
-  color: #2196f3;
+.link-decor :hover,
+.link-decor :focus {
+  color: var(--primary-text-color);
 }
-a > span {
+.link-decor {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-}
-.link-spacing {
-  padding-right: 331px;
-}
-a {
-  text-decoration: none;
-  color: black;
+  color: var(--header-color);
 }
 .contacts :hover {
-  color: #2196f3;
+  color: var(--primary-text-color);
 }
 .main {
   box-sizing: border-box;
   width: 1600px;
   height: 600px;
   top: 80px;
-  background-color: #2f303a;
+  background-color: var(--primary-bg-color);
 }
 .main-title {
   text-align: center;
@@ -72,7 +78,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 .main-button {
   position: absolute;
@@ -80,10 +86,10 @@ a {
   height: 50px;
   left: 700px;
   top: 430px;
-  background: #2196f3;
+  background: var(--primary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--third-text-color);
   font-weight: 700;
   font-size: 16px;
 }
@@ -102,7 +108,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var var(--main-text-color);
   margin-right: 30px;
 }
 .atributes-text > span {
@@ -125,7 +131,7 @@ a {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 
-  color: #212121;
+  color: var(--header-color);
 }
 .gallery {
   box-sizing: border-box;
@@ -141,7 +147,7 @@ a {
   left: 0px;
   top: 1449px;
   margin-top: 94px;
-  background: #f5f4fa;
+  background: var(--secondaru-bg-color);
 }
 .flex-container-title {
   width: 364px;
@@ -160,12 +166,27 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+/* Параметри для сторінки Портфоліо */
+
 .filter {
   box-sizing: border-box;
   width: 611px;
   height: 54px;
   left: 495px;
   top: 174px;
+}
+.filter-button {
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  background: var(--secondaru-bg-color);
+  border-radius: 4px;
 }
 button {
   font-family: inherit;
@@ -178,29 +199,41 @@ button {
   top: 262px;
   border: 1px solid rgba(238, 238, 238, 1);
 }
+.second-page-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--header-color);
+}
+.second-page-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--main-text-color);
+}
 .footer {
   width: 1600px;
   height: 252px;
-  background: #2f303a;
+  background: var(--primary-bg-color);
 }
 #contacts {
   width: 1600px;
   height: 252px;
 
-  background: #2f303a;
+  background: var(--primary-bg-color);
 }
 .contacts-title {
   padding-top: 60px;
   padding-bottom: 20px;
-  color: #ffffff;
+  color: var(--third-text-color);
 }
 .contacts-title span {
-  margin-top: 154px;
+  padding-top: 154px;
   padding-left: 215px;
-  color: #2196f3;
+  color: var(--primary-text-color);
 }
 .contacts span {
-  color: #ffffff;
+  color: var(--third-text-color);
   padding-left: 215px;
   font-weight: 400;
   font-size: 14px;
