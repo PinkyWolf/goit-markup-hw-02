@@ -188,9 +188,6 @@ body {
   background: var(--secondaru-bg-color);
   border-radius: 4px;
 }
-button {
-  font-family: inherit;
-}
 .project-box {
   box-sizing: border-box;
   width: 370px;
